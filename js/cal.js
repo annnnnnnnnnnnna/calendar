@@ -17,7 +17,7 @@ function init() {
   document.getElementById('cal').style.width = yoko + 'px';
   document.getElementById('cal').style.backgroundColor = '#' + document.getElementById('bgColor').value;
   if (params.get('mode') == 'view') {
-    document.getElementById('edit').style.visibility = 'collapse';
+    document.getElementById('edit').style.display = 'none';
   }
   changeMonth();
   save();
