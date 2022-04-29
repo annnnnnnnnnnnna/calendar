@@ -1,0 +1,58 @@
+ * {
+  margin:0px;
+}
+table { 
+  border: 2px #808080 solid; 
+  border-collapse: collapse;
+}
+.day {
+  font-family: cursive;
+  vertical-align: top;
+  text-align: right;
+  width: 11.5%;
+  font-size: 1.2em;
+}
+div.day {
+  width:100%;
+}
+.sun {
+  color: red;
+}
+.sat {
+  color: blue;
+}
+.datee {
+  height: 0px;
+}
+.remarks {
+  font-family: cursive;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.2em;
+  height: 0px;
+}
+.leftText {
+  font-family: cursive;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.5em;
+  height: 0px;
+}
+
+.hd {
+  font-family: cursive;
+  height: 10px;
+  font-size: 1em;
+  text-align: center;
+}
+.month {
+  width: 19.5%;
+  font-family: cursive;
+  vertical-align: top;
+  text-align: left;
+  font-size: 2em;
+}
+.ta {
+  height: 5em;
+  width: 300px;
+}
