@@ -42,7 +42,7 @@ function makeDisplayCalendar() {
     td.appendChild(mDiv);
     let lDiv = document.createElement("div");
     lDiv.id = 'leftTextArea';
-    lDiv.className = "remarks";
+    lDiv.className = "leftText";
     td.appendChild(lDiv);
     tr.appendChild(td);
 
