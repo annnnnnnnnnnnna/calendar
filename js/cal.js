@@ -92,10 +92,9 @@ function makeDisplayCalendar() {
           td.className = "day";
           let dDiv = document.createElement("div");
           dDiv.id = 'd' + w + wd;
-          dDiv.className = "date";
-          if (wd == 1){ dDiv.className = "day sun"; } 
-          else if (wd == 7) { dDiv.className = "day sat"; }
-          else { dDiv.className = "day"; }
+          if (wd == 1){ dDiv.className = "date day sun"; } 
+          else if (wd == 7) { dDiv.className = "date day sat"; }
+          else { dDiv.className = "date day"; }
           td.appendChild(dDiv);
           let rDiv = document.createElement("div");
           rDiv.id = 'r' + w + wd;
