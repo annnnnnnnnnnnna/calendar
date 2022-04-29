@@ -10,7 +10,6 @@ table {
   vertical-align: top;
   text-align: right;
   width: 11.5%;
-  font-size: 1.2em;
 }
 div.day {
   width:100%;
@@ -22,6 +21,7 @@ div.day {
   color: blue;
 }
 .date {
+  font-size: 1em;
 }
 .remarks {
   font-family: cursive;
