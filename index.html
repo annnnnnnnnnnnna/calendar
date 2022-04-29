@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <title>Calendar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="./js/cal.js"></script>
+    <link rel="stylesheet" href="./css/cal.css" />
+</head>
+<body onload="init()" style="text-size-adjust: none;">
+<table class="cal" id="cal" border>
+</table>
+<br>
+<br>
+<div id="edit">
+<br>
+<br>
+<input type="button" onclick="apply()" value="反映"> このボタンを押すと、もろもろが画面上部のカレンダーに反映されます
+<br>
+<br>
+<input type="text" id="y" size="3">年<input type="text" id="m" size="3">月<input type="button" onclick="changeMonth()" value="のカレンダーに変更">
+<br>
+<hr>
+<br>
+背景色 #<input type="text" id="bgColor" size="6" value="d5b791">
+<br>
+<hr>
+<br>
+縦<input type="text" id="tateSize" value="100" size="3">px
+<input type="button" onclick="tatePlus()" value="伸ばす">
+<input type="button" onclick="tateMinus()" value="縮める">
+<br>
+<hr>
+<br>
+幅<input type="text" id="yokoSize" value="100" size="3">px
+<input type="button" onclick="yokoPlus()" value="伸ばす">
+<input type="button" onclick="yokoMinus()" value="縮める">
+<br>
+<hr>
+<br>
+左テキスト
+<textarea id="leftText" class="ta">
+</textarea>
+文字色#<input type="text" id="leftTextColor" size="6" value="000000">
+<br>
+<hr>
+<br>
+テキスト1<textarea id="text1" class="ta"></textarea>
+文字色#<input type="text" id="text1Color" size="6" value="000000">
+<br>
+<hr>
+<br>
+テキスト2<textarea id="text2" class="ta"></textarea>
+文字色#<input type="text" id="text2Color" size="6" value="000000">
+<br>
+<hr>
+<br>
+テキスト3<textarea id="text3" class="ta"></textarea>
+文字色#<input type="text" id="text3Color" size="6" value="000000">
+<br>
+<hr>
+<br>
+テキスト4<textarea id="text4" class="ta"></textarea>
+文字色#<input type="text" id="text4Color" size="6" value="000000">
+<br>
+<hr>
+<br>
+テキスト5<textarea id="text5" class="ta"></textarea>
+文字色#<input type="text" id="text5Color" size="6" value="000000">
+<br>
+<hr>
+<br>
+
+再編集リンク(編集する人はこっちのリンクをブックマークしてください)<br>
+<a id="editLink"></a>
+<br>
+<hr>
+<br>
+共有リンク(この辺の編集用パーツが見えなくなるリンクです)<br>
+<a id="shareLink"></a>
+<br>
+<hr>
+<br>
+
+配置コーナー（曜日で選ぶと同じ曜日が一括で変更されるので、その後で個別に変えてください）
+<table id="editCal" border width="50%">
+</table>
+<br>
+<br>
+
+<input type="button" onclick="apply()" value="反映"> このボタンを押すと、もろもろが画面上部のカレンダーに反映されます
+
+<br>
+<br>
+
+</div>
+</body>
+</html>
