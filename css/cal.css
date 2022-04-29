@@ -21,28 +21,24 @@ div.day {
 .sat {
   color: blue;
 }
-.datee {
-  height: 0px;
+.date {
 }
 .remarks {
   font-family: cursive;
   vertical-align: middle;
   text-align: center;
   font-size: 1.2em;
-  height: 0px;
 }
 .leftText {
   font-family: cursive;
   vertical-align: middle;
   text-align: center;
   font-size: 1.5em;
-  height: 0px;
 }
 
 .hd {
   font-family: cursive;
-  height: 10px;
-  font-size: 1em;
+  font-size: 0.8em;
   text-align: center;
 }
 .month {
