@@ -176,7 +176,7 @@ function createSelect (id) {
    opt.value = '-';
    opt.innerHTML = '-';
    sel.appendChild(opt);
-   for (let item = 1; item <= 5; item++) {
+   for (let item = 1; item <= 8; item++) {
      let opt = document.createElement("option");
      opt.value = item;
      opt.innerHTML = item;
@@ -300,6 +300,18 @@ function load(data) {
   document.getElementById('text4Color').value = json.remarks[3].color;
   document.getElementById('text5').value = json.remarks[4].text;
   document.getElementById('text5Color').value = json.remarks[4].color;
+  if (json.remarks[5]) {
+    document.getElementById('text6').value = json.remarks[5].text;
+    document.getElementById('text6Color').value = json.remarks[5].color;
+  }
+  if (json.remarks[6]) {
+    document.getElementById('text7').value = json.remarks[6].text;
+    document.getElementById('text7Color').value = json.remarks[6].color;
+  }
+  if (json.remarks[7]) {
+    document.getElementById('text8').value = json.remarks[7].text;
+    document.getElementById('text9Color').value = json.remarks[7].color;
+  }
   for (let w = 1; w <= 6; w++) {
     for (let wd = 1; wd <= 7; wd++) {
         document.getElementById('s' + w + wd).value = json.data[w-1][wd-1];
@@ -328,6 +340,12 @@ function save() {
     json += ' "color":"' + document.getElementById('text4Color').value + '"},';
     json += '{"text":"' + document.getElementById('text5').value.replaceAll('\n', '\\n') + '",';
     json += ' "color":"' + document.getElementById('text5Color').value + '"}';
+    json += '{"text":"' + document.getElementById('text6').value.replaceAll('\n', '\\n') + '",';
+    json += ' "color":"' + document.getElementById('text6Color').value + '"}';
+    json += '{"text":"' + document.getElementById('text7').value.replaceAll('\n', '\\n') + '",';
+    json += ' "color":"' + document.getElementById('text7Color').value + '"}';
+    json += '{"text":"' + document.getElementById('text8').value.replaceAll('\n', '\\n') + '",';
+    json += ' "color":"' + document.getElementById('text8Color').value + '"}';
   json += '],';
   json += '"data":[';
     for (let w = 1; w <= 6; w++) {
