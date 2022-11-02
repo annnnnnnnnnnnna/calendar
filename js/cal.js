@@ -276,6 +276,7 @@ function apply() {
       
     }
   }
+  document.getElementById('cal').style.backgroundColor = '#' + document.getElementById('bgColor').value;
   save();
 }
 
